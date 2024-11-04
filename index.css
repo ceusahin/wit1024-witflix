@@ -1,0 +1,85 @@
+* {
+  /* border: 1px solid black; */
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: rgb(71, 71, 71);
+  text-decoration: none;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.hero {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 20px;
+}
+
+.movie-plot {
+  width: 70%;
+}
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-panel img {
+  width: 2.5rem;
+  border-radius: 100px;
+}
+
+.user-panel .search-bar {
+  width: 6rem;
+}
+
+.user-panel .search-icon {
+}
+
+.movie-infos p {
+  line-height: 0.7rem;
+}
+
+button {
+  background: red;
+  color: white;
+  padding: 0.6rem 2.1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+button i {
+  margin-left: -1rem;
+  margin-right: 0.5rem;
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.age-warning {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 8px;
+}
