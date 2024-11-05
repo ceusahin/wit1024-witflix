@@ -48,10 +48,16 @@ header h1 {
 
 .user-panel .search-bar {
   width: 6rem;
-  border-radius: 8px;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  position: relative;
 }
 
 .user-panel .search-icon {
+  position: absolute;
+  /* width: 100px; */
+  margin-left: 84px;
+  text-align: right;
 }
 
 .movie-infos {
