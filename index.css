@@ -114,7 +114,8 @@ header h1 {
   border-radius: 5px;
 }
 
-.movie-card .play-btn {
+.movie-card button {
+  font-size: 0.85rem;
   margin-top: 1rem;
 }
 
@@ -192,6 +193,10 @@ footer img {
   margin-right: 1.5rem;
 }
 
+.footer-nav a:hover {
+  color: red;
+}
+
 .footer-social-medias {
   display: flex;
   flex-direction: column;
@@ -204,4 +209,46 @@ footer img {
 
 footer h4 {
   margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: center;
+    row-gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    display: flex;
+    gap: 2rem;
+    order: 2;
+    font-weight: bold;
+  }
+
+  .movie-card .user-review {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movie-card button {
+    display: flex;
+    font-size: 0.7rem;
+  }
+
+  .age-warning {
+    width: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav {
+    display: flex;
+    width: 35rem;
+    margin-bottom: 1.7rem;
+  }
 }
