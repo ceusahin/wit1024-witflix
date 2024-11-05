@@ -101,6 +101,7 @@ header h1 {
 .suggestion-movies {
   display: flex;
   gap: 2rem;
+  overflow-x: scroll;
 }
 
 .suggestion-row {
@@ -110,8 +111,9 @@ header h1 {
 .movie-card {
   padding: 1rem;
   border: 1px solid black;
-  width: 100%;
+  min-width: 19.1rem;
   border-radius: 5px;
+  /* display: flex; */
 }
 
 .movie-card button {
