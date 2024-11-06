@@ -4,7 +4,7 @@
 }
 
 body {
-  background: whitesmoke;
+  background-image: url("assets/images/bckgrnd.jpeg");
 }
 
 header {
@@ -22,10 +22,11 @@ header nav {
 
 header nav a:hover {
   color: red;
+  color: rgb(95, 23, 23);
 }
 
 header nav a {
-  color: rgb(71, 71, 71);
+  color: red;
   text-decoration: none;
 }
 
@@ -40,6 +41,7 @@ header h1 {
   gap: 0.5rem;
   flex: 1;
   justify-content: flex-end;
+  color: white;
 }
 
 .user-panel img {
@@ -120,14 +122,16 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .suggestion-header a {
   text-decoration: none;
+  color: red;
 }
 
 .suggestion-header a:hover {
-  color: red;
+  color: rgb(95, 23, 23);
 }
 
 .suggestion-movies {
@@ -146,6 +150,16 @@ video {
   border: 1px solid black;
   min-width: 19.1rem;
   border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
 }
 
 .friends {
@@ -305,10 +319,11 @@ footer img {
   display: flex;
   flex-direction: column;
   margin-right: 1.5rem;
+  color: white;
 }
 
 .footer-nav a:hover {
-  color: red;
+  color: rgb(95, 23, 23);
 }
 
 .footer-social-medias {
@@ -319,10 +334,12 @@ footer img {
 .footer-links a {
   text-decoration: none;
   margin-right: 1.2rem;
+  color: red;
 }
 
 footer h4 {
   margin-top: 0;
+  color: white;
 }
 
 /* hamburger menu */
@@ -405,6 +422,7 @@ footer h4 {
   .hamburger-mobil {
     display: flex;
     justify-content: end;
+    color: white;
   }
 
   .hamburger-menu ul {
