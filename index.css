@@ -60,7 +60,6 @@ header h1 {
 
 .user-panel .search-icon {
   position: absolute;
-  /* width: 100px; */
   margin-left: 84px;
   text-align: right;
 }
@@ -113,7 +112,6 @@ header h1 {
   border: 1px solid black;
   min-width: 19.1rem;
   border-radius: 5px;
-  /* display: flex; */
 }
 
 .movie-card button {
