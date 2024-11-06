@@ -5,6 +5,7 @@
 
 body {
   background-image: url("assets/images/bckgrnd.jpeg");
+  overflow-x: hidden;
 }
 
 header {
@@ -22,17 +23,28 @@ header nav {
 
 header nav a:hover {
   color: red;
-  color: rgb(95, 23, 23);
 }
 
 header nav a {
-  color: red;
+  color: white;
   text-decoration: none;
 }
 
 header h1 {
   margin: 0;
   flex: 1;
+}
+
+header h1:hover {
+  cursor: pointer;
+}
+
+.fa-bell:hover {
+  cursor: pointer;
+}
+
+.profile-photo:hover {
+  cursor: pointer;
 }
 
 .user-panel {
@@ -439,9 +451,14 @@ footer h4 {
     justify-content: center;
   }
 
+  .hamburger-menu ul li:hover {
+    background-color: rgb(95, 23, 23);
+    cursor: pointer;
+  }
+
   .linkler {
-    display: none;
-    /* display: block; */
+    /* display: none; */
+    display: block;
     width: 100%;
     position: absolute;
     right: -100%;
