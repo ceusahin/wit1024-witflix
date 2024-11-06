@@ -149,8 +149,7 @@ video {
 }
 
 .friends {
-  background-image: url("assets/images/friends.jpg"),
-    url("assets/images/dexter.jpg");
+  background-image: url("assets/images/friends.jpg");
   background-size: cover;
 }
 
