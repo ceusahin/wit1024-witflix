@@ -12,6 +12,7 @@ header {
 
 header nav {
   display: flex;
+  font-weight: bold;
   gap: 1rem;
 }
 
@@ -211,20 +212,65 @@ footer h4 {
   margin-top: 0;
 }
 
-@media (max-width: 600px) {
-  header {
+/* hamburger menu */
+.linkler {
+  display: none;
+}
+.hamburger-menu {
+  /* background-color: yellow; */
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-menu ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hamburger-menu ul li {
+  list-style-type: none;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.hamburger-menu a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  display: block;
+  padding: 20px;
+  width: 100%;
+}
+
+.hamburger-menu li:hover {
+  background-color: #c9f;
+}
+
+.hamburger-mobil {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  color: black;
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 650px) {
+  /* header {
     display: flex;
     justify-content: center;
     row-gap: 1.2rem;
     flex-wrap: wrap;
-  }
+  } */
 
-  header nav {
+  /* header nav {
     display: flex;
     gap: 2rem;
     order: 2;
     font-weight: bold;
-  }
+  } */
 
   .movie-card .user-review {
     display: flex;
@@ -251,4 +297,74 @@ footer h4 {
     width: 35rem;
     margin-bottom: 1.7rem;
   }
+
+  .default-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    width: 100%;
+  }
+
+  .hamburger-mobil {
+    /* margin-left: 16rem; */
+    /* margin-right: 100px; */
+    display: flex;
+    justify-content: end;
+  }
+
+  .hamburger-menu ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hamburger-menu ul li {
+    text-align: center;
+    display: block;
+    /* background-color: gray; */
+  }
+
+  .linkler {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: darkred;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: -100%;
+    transition: 1s;
+  }
+
+  .active {
+    display: block;
+    left: 0;
+  }
+
+  /* .default-menu {
+    display: none;
+  }
+
+  .mobil-menu {
+    display: block;
+  }
+
+  .hamburger-menu {
+    width: 100%;
+    display: none;
+  }
+
+  .hamburger-menu ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hamburger-menu ul li {
+    text-align: center;
+    display: block;
+  }
+
+  .active {
+    display: block;
+  } */
 }

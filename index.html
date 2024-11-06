@@ -24,12 +24,29 @@
 
     <header>
       <h1 class="red">WiTFLiX</h1>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-mobil">
+          <i class="fa-solid fa-bars open_close"></i>
+        </div>
+
+        <div class="linkler">
+          <ul>
+            <li><a class="menu-item" href="">Topic 1</a></li>
+            <li><a class="menu-item" href="">Topic 2</a></li>
+            <li><a class="menu-item" href="">Topic 3</a></li>
+            <li><a class="menu-item" href="">Topic 4</a></li>
+          </ul>
+        </div>
+      </div>
+
       <nav class="default-menu">
         <a href="">Topic 1</a>
         <a href="">Topic 2</a>
         <a href="">Topic 3</a>
         <a href="">Topic 4</a>
       </nav>
+
       <div class="user-panel">
         <input class="search-bar" type="text" placeholder="Search.." />
         <i class="fa-solid fa-bell fa-2xl"></i>
@@ -350,5 +367,18 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".open_close").click(function () {
+          $(".linkler").toggleClass("active");
+        });
+      });
+    </script>
   </body>
 </html>
