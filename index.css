@@ -64,17 +64,35 @@ header h1:hover {
 .user-panel input {
   padding: 0.3rem 1.8rem 0.3rem 0.3rem;
   width: 7rem;
-  background: url("assets/images/search-icon.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .user-panel .search-bar {
-  width: 6rem;
+  width: 1rem;
   padding: 0.3rem;
   border-radius: 1rem;
-  position: relative;
+  background: white;
+  background-image: url("assets/images/search-icon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border: 1px solid white;
+  transition: all 0.4s;
+}
+
+.search-bar:focus {
+  width: 6rem;
+  /* border-radius: 1rem; */
+  /* background-position: -1rem; */
+  padding-left: 1.5rem;
+}
+
+.search-bar:hover {
+  border: 1px solid red;
+}
+
+.search-bar::placeholder {
+  /* display: none; */
+  color: dark;
 }
 
 .user-panel .search-icon {
@@ -162,6 +180,12 @@ video {
   border: 1px solid black;
   min-width: 19.1rem;
   border-radius: 5px;
+}
+
+.movie-card:hover {
+  border: 1px solid red;
+  min-width: 20rem;
+  transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
